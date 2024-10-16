@@ -1,0 +1,33 @@
+.main{
+    width: 100%;
+    height: 2rem;
+    background-color: black;
+    display: flex;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+.tab{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 -0.2rem 0.4rem black inset;
+}
+.selectedTab{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+      padding-left: 0.5rem;
+      font-size: 0.6rem;
+    }
+}

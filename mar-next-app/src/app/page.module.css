@@ -1,0 +1,9 @@
+.mobileWarning{
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .mobileWarning{
+        display: inline;
+    }
+}

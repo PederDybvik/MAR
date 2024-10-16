@@ -1,0 +1,61 @@
+.header {
+    margin: 0;
+    height: 15rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.title > h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgb(249 120 55);
+    /* text-shadow: 5px 5px 0px #FFB650, 
+        10px 10px 0px #FFD662, 
+        15px 15px 0px  #FF80BF, 
+        20px 20px 0px #EF5097, 
+        25px 25px 0px #6868AC, 
+        30px 30px 0px #90B1E0; */
+    margin: 0;
+}
+.title > h2 {
+    margin: 0;
+}
+
+.sandeep{
+    height: 7rem;
+    width: 7rem;
+    animation: rotation 8s infinite linear
+}
+
+.abu{
+    height: 7rem;
+    width: 5rem;
+    animation: rotation 5s infinite linear
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sandeep{
+        display: none;
+    }
+    .abu{
+        display: none;
+    }
+}
