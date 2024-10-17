@@ -6,6 +6,14 @@ import Breadcrumbs from "./components/breadcrumbs/breadcrumbs";
 import Footer from "./components/footer/footer";
 import styles from "./layout.module.css";
 import Navbar from "./components/navbar/navbar";
+import { Germania_One } from "next/font/google";
+
+const germaniaOne = Germania_One({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-germania-one",
+  weight: ["400"],
+});
 
 const inputMono = localFont({
   src: [
@@ -35,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inputMono.className}`}>
+      <body className={`${inputMono.variable} ${germaniaOne.variable}`}>
         <div className={styles.background}>
           <div className={styles.innerBackground}>
             <div>

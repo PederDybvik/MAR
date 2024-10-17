@@ -1,0 +1,33 @@
+.mainDiv{
+    --s: 50px; /* control the size*/
+    --c1: #8c3636;
+    --c2: #7a3333;
+    --c3: #2c2e2a;
+    
+    --p:at 45% 40%,#0000 75%,;
+    --g1:conic-gradient(var(--p) var(--c1) 0);
+    --g2:conic-gradient(var(--p) var(--c2) 0);
+    background:
+        var(--g1),var(--g2) calc(2*var(--s)) 0,
+        var(--g2) calc(3*var(--s)) var(--s),
+        var(--g1) var(--s) var(--s) var(--c3);
+    background-size: calc(4*var(--s)) calc(2*var(--s));
+
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book{
+    height: 10rem;
+    width: 10rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-germania-one);
+    margin: 1rem 0 0 0;
+    text-shadow: white 0 0 1rem;
+}

@@ -1,0 +1,45 @@
+.listContainer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-germania-one);
+    text-shadow: white 0 0 1rem;
+    margin: 1rem 0;
+}
+
+.messageList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.messageItem {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ff6699;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.messageName {
+    font-weight: bold;
+    color: #ff3366;
+    margin-bottom: 5px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 900;
+}
+
+.messageContent {
+    color: #333;
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+}
+
