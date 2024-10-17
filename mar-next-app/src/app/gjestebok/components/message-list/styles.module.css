@@ -33,13 +33,13 @@
     font-weight: bold;
     color: #ff3366;
     margin-bottom: 5px;
-    font-family: "Comic Neue", cursive;
-    font-weight: 900;
+    font-family: var(--font-comic-neue);
+    font-weight: 700;
 }
 
 .messageContent {
     color: #333;
-    font-family: "Comic Neue", cursive;
-    font-weight: 600;
+    font-family: var(--font-comic-neue);
+    font-weight: 400;
 }
 

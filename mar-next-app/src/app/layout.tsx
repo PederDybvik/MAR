@@ -6,13 +6,20 @@ import Breadcrumbs from "./components/breadcrumbs/breadcrumbs";
 import Footer from "./components/footer/footer";
 import styles from "./layout.module.css";
 import Navbar from "./components/navbar/navbar";
-import { Germania_One } from "next/font/google";
+import { Germania_One, Comic_Neue } from "next/font/google";
 
 const germaniaOne = Germania_One({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-germania-one",
   weight: ["400"],
+});
+
+const comicNeue = Comic_Neue({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-comic-neue",
+  weight: ["400", "700"],
 });
 
 const inputMono = localFont({
@@ -43,7 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inputMono.variable} ${germaniaOne.variable}`}>
+      <body
+        className={`${inputMono.variable} ${germaniaOne.variable} ${comicNeue.variable}`}
+      >
         <div className={styles.background}>
           <div className={styles.innerBackground}>
             <div>
