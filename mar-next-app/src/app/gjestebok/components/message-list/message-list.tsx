@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./styles.module.css";
 import GuestBookMessage from "../../../../persistence/entities/guestbook-message";
+import { unstable_noStore } from "next/cache";
 
 export default function MessageList({
   messages,
 }: {
   messages: GuestBookMessage[];
 }) {
+  unstable_noStore();
+
   messages = messages.sort(
     (a, b) => b.createdAt.getTime() - a.createdAt.getTime()
   );
